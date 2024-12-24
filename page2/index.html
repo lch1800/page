@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#818CF8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">
+    <!-- 네비게이션 -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg"></div>
+                    <span class="text-xl font-bold">SaaS Product</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="hover:text-primary">Features</a>
+                    <a href="#pricing" class="hover:text-primary">Pricing</a>
+                    <a href="#testimonials" class="hover:text-primary">Testimonials</a>
+                    <a href="#faq" class="hover:text-primary">FAQ</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="px-4 py-2 hover:text-primary">Login</a>
+                    <a href="#" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90">
+                        Start Free Trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        Work Smarter,<br>Not Harder
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        AI 기반 자동화 솔루션으로 업무 효율을 높이세요.<br>
+                        반복적인 작업은 이제 자동으로 처리됩니다.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#" class="px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90">
+                            무료로 시작하기
+                        </a>
+                        <a href="#"
+                            class="px-8 py-4 border border-gray-300 rounded-lg hover:border-primary hover:text-primary">
+                            데모 보기
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="https://via.placeholder.com/600x400" alt="Hero Image"
+                        class="w-full rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 브랜드 로고 섹션 -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-gray-600 mb-8">전 세계 1,000+ 기업이 사용하고 있습니다</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-50">
+                <img src="https://via.placeholder.com/120x40" alt="Brand Logo">
+                <!-- 추가 로고들... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 소개 섹션 -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">주요 기능</h2>
+                <p class="text-gray-600">
+                    복잡한 업무를 단순화하고 자동화하는 강력한 기능을 제공합니다
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">자동화 워크플로우</h3>
+                    <p class="text-gray-600">
+                        반복적인 작업을 자동화하여 시간을 절약하고 생산성을 높입니다.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">자동화 워크플로우</h3>
+                    <p class="text-gray-600">
+                        반복적인 작업을 자동화하여 시간을 절약하고 생산성을 높입니다.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">자동화 워크플로우</h3>
+                    <p class="text-gray-600">
+                        반복적인 작업을 자동화하여 시간을 절약하고 생산성을 높입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 작동 방식 섹션 -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">어떻게 작동하나요?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-primary">1</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">계정 생성</h3>
+                    <p class="text-gray-600">간단한 이메일 인증으로 시작하세요</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-primary">2</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">계정 생성</h3>
+                    <p class="text-gray-600">간단한 이메일 인증으로 시작하세요</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-primary">3</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">계정 생성</h3>
+                    <p class="text-gray-600">간단한 이메일 인증으로 시작하세요</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-primary">4</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">계정 생성</h3>
+                    <p class="text-gray-600">간단한 이메일 인증으로 시작하세요</p>
+                </div>
+                <!-- 추가 스텝... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 데모/스크린샷 섹션 -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-br from-primary to-secondary p-8 md:p-16 rounded-2xl text-white">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-bold mb-4">실시간으로 경험해보세요</h2>
+                        <p class="mb-8">직접 체험해보고 결정하세요. 설치 없이 브라우저에서 바로 시작할 수 있습니다.</p>
+                        <button class="px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100">
+                            데모 시작하기
+                        </button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="https://via.placeholder.com/600x400" alt="Demo" class="rounded-lg shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 통계/수치 섹션 -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">99%</div>
+                    <p class="text-gray-600">고객 만족도</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">99%</div>
+                    <p class="text-gray-600">업무 효율 향상</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">99%</div>
+                    <p class="text-gray-600">재택 근무 효율 향상</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">99%</div>
+                    <p class="text-gray-600">회사 만족도</p>
+                </div>
+                <!-- 추가 통계... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 가격 정책 섹션 -->
+    <section id="pricing" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">가격 정책</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4">Basic</h3>
+                    <div class="text-4xl font-bold mb-4">₩29,000<span class="text-lg text-gray-600">/월</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>기본 기능 포함</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span>추가 기능 포함</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>월 100개 제한</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors">
+                        시작하기
+                    </button>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4">Standard</h3>
+                    <div class="text-4xl font-bold mb-4">₩49,000<span class="text-lg text-gray-600">/월</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>기본 기능 포함</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>추가 기능 포함</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>월 500개 제한</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors">
+                        시작하기
+                    </button>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4">Premium</h3>
+                    <div class="text-4xl font-bold mb-4">₩99,000<span class="text-lg text-gray-600">/월</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>기본 기능 포함</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>추가 기능 포함</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>무제한, 제한 없음</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors">
+                        시작하기
+                    </button>
+                </div>
+                <!-- 추가 요금제... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 고객 후기 섹션 -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">고객 후기</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-8 relative shadow-sm">
+                    <!-- 프로필 -->
+                    <div class="flex items-center gap-4">
+                        <img src="https://via.placeholder.com/40" alt="Avatar"
+                            class="w-10 h-10 rounded-full ring-2 ring-purple-100">
+                        <div>
+                            <div class="font-semibold">김서연</div>
+                            <div class="text-sm text-purple-500">마케팅 매니저</div>
+                        </div>
+                    </div>
+                    <!-- 구분선 -->
+                    <div class="w-40 h-0.5 bg-purple-100 mt-6"></div>
+
+                    <!-- 별점 -->
+                    <div class="flex gap-1 mb-8 mt-4">
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <!-- 후기 내용 -->
+                    <p class="text-gray-600 mb-8 text-lg italic">
+                        "업무 효율이 200% 향상되었습니다. 이제는 더 중요한 일에 집중할 수 있게 되었어요."
+                    </p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 relative shadow-sm">
+                    <!-- 프로필 -->
+                    <div class="flex items-center gap-4">
+                        <img src="https://via.placeholder.com/40" alt="Avatar"
+                            class="w-10 h-10 rounded-full ring-2 ring-purple-100">
+                        <div>
+                            <div class="font-semibold">김서연</div>
+                            <div class="text-sm text-purple-500">마케팅 매니저</div>
+                        </div>
+                    </div>
+                    <!-- 구분선 -->
+                    <div class="w-40 h-0.5 bg-purple-100 mt-6"></div>
+
+                    <!-- 별점 -->
+                    <div class="flex gap-1 mb-8 mt-4">
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <!-- 후기 내용 -->
+                    <p class="text-gray-600 mb-8 text-lg italic">
+                        "업무 효율이 200% 향상되었습니다. 이제는 더 중요한 일에 집중할 수 있게 되었어요."
+                    </p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 relative shadow-sm">
+                    <!-- 프로필 -->
+                    <div class="flex items-center gap-4">
+                        <img src="https://via.placeholder.com/40" alt="Avatar"
+                            class="w-10 h-10 rounded-full ring-2 ring-purple-100">
+                        <div>
+                            <div class="font-semibold">김서연</div>
+                            <div class="text-sm text-purple-500">마케팅 매니저</div>
+                        </div>
+                    </div>
+                    <!-- 구분선 -->
+                    <div class="w-40 h-0.5 bg-purple-100 mt-6"></div>
+
+                    <!-- 별점 -->
+                    <div class="flex gap-1 mb-8 mt-4">
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <!-- 후기 내용 -->
+                    <p class="text-gray-600 mb-8 text-lg italic">
+                        "업무 효율이 200% 향상되었습니다. 이제는 더 중요한 일에 집중할 수 있게 되었어요."
+                    </p>
+                </div>
+                <!-- 추가 후기... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">자주 묻는 질문</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="border rounded-lg p-4">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <span class="font-semibold">무료 체험 기간은 얼마인가요?</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        14일 동안 모든 기능을 무료로 사용해보실 수 있습니다.
+                    </div>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <span class="font-semibold">사용 가능한 기능은 모두 몇 개인가요?</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        모든 기능을 사용해보실 수 있습니다.
+                    </div>
+                </div>
+                <div class="border rounded-lg p-4">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <span class="font-semibold">요금 변경은 어떻게 하나요?</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        월 마지막 날에 요금제를 변경할 수 있습니다.
+                    </div>
+                </div>
+                <!-- 추가 FAQ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 섹션 -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">지금 바로 시작하세요</h2>
+            <p class="mb-8">14일 무료 체험 기간 동안 모든 기능을 경험해보세요.</p>
+            <button class="px-8 py-4 bg-white text-primary rounded-lg hover:bg-gray-100">
+                무료로 시작하기
+            </button>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-white text-black py-12 border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- 첫 번째 컬럼: Product -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-black">Features</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Pricing</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Documentation</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">API</a></li>
+                    </ul>
+                </div>
+
+                <!-- 두 번째 컬럼: Company -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-black">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Blog</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- 세 번째 컬럼: Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-black">Help Center</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">FAQs</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Status</a></li>
+                    </ul>
+                </div>
+
+                <!-- 네 번째 컬럼: Social Media -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-black">Facebook</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Twitter</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">Instagram</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 하단 카피라이트 및 추가 정보 -->
+            <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 SaaS Product. All rights reserved.</p>
+                <p class="mt-2"><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#"
+                        class="hover:underline">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

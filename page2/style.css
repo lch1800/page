@@ -1,0 +1,25 @@
+/* 페이드인 애니메이션 */
+.animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FAQ 아코디언 트랜지션 */
+#faq .hidden {
+    display: none;
+}
+
+/* 스무스 스크롤 */
+html {
+    scroll-behavior: smooth;
+}
