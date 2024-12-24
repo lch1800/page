@@ -1,0 +1,126 @@
+/* assets/css/footer/footer.css */
+.footer {
+    background-color: #f8f9fa;
+    padding: 4rem 0 2rem;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer .cta-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.footer .cta-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.footer .cta-button {
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.footer .footer-content {
+    padding: 4rem 0;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-brand {
+    max-width: 300px;
+}
+
+.footer .footer-brand .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-brand p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer .footer-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.footer .nav-column h5 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.footer .nav-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .nav-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer .nav-column ul a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .nav-column ul a:hover {
+    color: #4f46e5;
+}
+
+.footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer .legal-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer .legal-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer .legal-links a:hover {
+    color: #333;
+}
+
+.footer .copyright {
+    color: #666;
+    font-size: 0.9rem;
+}

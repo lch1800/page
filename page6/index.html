@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모던 랜딩 페이지</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 w-full md:w-4/5 mx-auto">
+    <!-- 네비게이션 -->
+    <nav class="fixed md:w-4/5 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800">Brand</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">홈</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">서비스</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 배너 (padding-top 추가) -->
+    <div class="bg-blue-600 pt-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center py-3 text-white text-sm md:text-base">
+                <span class="mr-3">🎉</span>
+                <p class="font-medium">신규 가입 시 첫 달 무료! 지금 바로 시작하세요</p>
+                <a href="#" class="ml-4 underline hover:text-blue-200">자세히 보기 →</a>
+                <!-- 선택사항: 닫기 버튼 -->
+                <button class="ml-4 hover:text-blue-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 히어로 섹션 -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8 animate-fade-in">
+                혁신적인 솔루션을 제공합니다
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                최신 기술과 창의적인 아이디어로 당신의 비즈니스를 성장시키세요
+            </p>
+            <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                시작하기
+            </button>
+        </div>
+    </section>
+
+    <!-- 특징 섹션 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">빠른 성능</h3>
+                <p class="text-gray-6000">최적화된 성능으로 더 나은 경험을 제공합니다</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">빠른 성능</h3>
+                <p class="text-gray-600">최적화된 성능으로 더 나은 경험을 제공합니다</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">빠른 성능</h3>
+                <p class="text-gray-600">최적화된 성능으로 더 나은 경험을 제공합니다</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">빠른 성능</h3>
+                <p class="text-gray-600">최적화된 성능으로 더 나은 경험을 제공합니다</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">빠른 성능</h3>
+                <p class="text-gray-600">최적화된 성능으로 더 나은 경험을 제공합니다</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">빠른 성능</h3>
+                <p class="text-gray-600">최적화된 성능으로 더 나은 경험을 제공합니다</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 기존 특징 섹션 이후에 추가 -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">2000+</div>
+                    <div class="text-gray-600">고객 수</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">150+</div>
+                    <div class="text-gray-600">프로젝트</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">2000+</div>
+                    <div class="text-gray-600">고객 수</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">150+</div>
+                    <div class="text-gray-600">프로젝트</div>
+                </div>
+                <!-- 나머지 통계 아이템 추가 가능 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 서비스 소개 섹션 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">우리의 서비스</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4">서비스 제목</h3>
+                    <p class="text-gray-600">서비스 설명이 들어갈 자리입니다.</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4">서비스 제목</h3>
+                    <p class="text-gray-600">서비스 설명이 들어갈 자리입니다.</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4">서비스 제목</h3>
+                    <p class="text-gray-600">서비스 설명이 들어갈 자리입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 섹션 -->
+    <section class="py-20 bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">지금 바로 시작하세요</h2>
+            <p class="mb-8 max-w-2xl mx-auto">간단한 설명문구가 들어갈 자리입니다.</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                문의하기
+            </button>
+        </div>
+    </section>
+
+    <!-- 가격 섹션 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">가격 안내</h2>
+                <button id="priceToggle"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                    가격 확인하기
+                </button>
+            </div>
+
+            <!-- 가격 테이블 (기본적으로 숨김) -->
+            <div id="priceSection" class="hidden transition-all duration-300 ease-in-out">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 기본 플랜 -->
+                    <div class="border rounded-lg p-8 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold mb-4">기본 플랜</h3>
+                        <div class="text-3xl font-bold mb-6">₩29,000<span
+                                class="text-base font-normal text-gray-600">/월</span></div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                기본 기능 제공
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                이메일 지원
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            시작하기
+                        </button>
+                    </div>
+
+                    <!-- 프로 플랜 -->
+                    <div class="border rounded-lg p-8 bg-blue-50 border-blue-200 hover:shadow-lg transition-shadow">
+                        <div class="text-blue-600 font-semibold mb-2">인기</div>
+                        <h3 class="text-xl font-bold mb-4">프로 플랜</h3>
+                        <div class="text-3xl font-bold mb-6">₩49,000<span
+                                class="text-base font-normal text-gray-600">/월</span></div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                모든 기본 기능
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                우선 지원
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                고급 기능
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            시작하기
+                        </button>
+                    </div>
+
+                    <!-- 엔터프라이즈 플랜 -->
+                    <div class="border rounded-lg p-8 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold mb-4">엔터프라이즈</h3>
+                        <div class="text-3xl font-bold mb-6">문의<span
+                                class="text-base font-normal text-gray-600">/월</span></div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                모든 프로 기능
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                전담 매니저
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                맞춤형 설정
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            문의하기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 고객 후기 섹션 -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">고객 후기</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-600 mb-4">"후기 내용이 들어갈 자리입니다."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <div class="font-semibold">고객명</div>
+                            <div class="text-gray-500 text-sm">직책</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-600 mb-4">"후기 내용이 들어갈 자리입니다."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <div class="font-semibold">고객명</div>
+                            <div class="text-gray-500 text-sm">직책</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-600 mb-4">"후기 내용이 들어갈 자리입니다."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <div class="font-semibold">고객명</div>
+                            <div class="text-gray-500 text-sm">직책</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 추가 후기 카드 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Brand</h3>
+                    <p class="text-gray-400">간단한 회사 소개글이 들어갈 자리입니다.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">빠른 링크</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">홈</a></li>
+                        <li><a href="#" class="hover:text-white">서비스</a></li>
+                        <li><a href="#" class="hover:text-white">문의하기</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">연락처</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>이메일: info@example.com</li>
+                        <li>전화: 02-1234-5678</li>
+                        <li>주소: 서울시 강남구</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">뉴스레터</h3>
+                    <div class="flex">
+                        <input type="email" placeholder="이메일 주소"
+                            class="bg-gray-800 text-white px-4 py-2 rounded-l focus:outline-none">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r hover:bg-blue-700">구독</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

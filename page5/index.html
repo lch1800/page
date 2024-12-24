@@ -1,0 +1,102 @@
+<!-- 예: pages/page1/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 5</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main_banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/destinations.css">
+</head>
+<body>
+    <div class="page-content">
+        <div id="header-container"></div>
+        <div id="main_banner-container"></div>
+        <div id="destinations-container"></div>
+        <div id="stats-container"></div>
+        <div id="footer-container"></div>
+    </div>
+
+    <script>
+        async function loadComponent(component) {
+            try {
+                console.log(`Loading component: ${component}`);
+                const response = await fetch(`components/${component}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${component}: ${response.statusText}`);
+                }
+                const html = await response.text();
+
+                const container = document.getElementById(`${component}-container`);
+                if (container) {
+                    container.innerHTML = html;
+
+                    // 각 컴포넌트별 스크립트 로드 및 초기화
+                    switch (component) {
+                        case 'main_banner':
+                            const bannerScript = document.createElement('script');
+                            bannerScript.src = 'js/main_banner.js';
+                            bannerScript.onload = () => {
+                                console.log('main_banner.js loaded successfully');
+                                new MainBanner();
+                            };
+                            document.body.appendChild(bannerScript);
+                            break;
+                        case 'destinations':
+                            const destinations = document.createElement('script');
+                            destinations.src = 'js/destinations.js';
+                            destinations.onload = () => {
+                                console.log('destinations.js loaded successfully');
+                                if (typeof initDestinations === 'function') {
+                                    initDestinations();
+                                } else {
+                                    console.warn('initDestinations function not found');
+                                }
+                            };
+                            document.body.appendChild(destinations);
+                            break;
+                        case 'stats':
+                            const stats = document.createElement('script');
+                            stats.src = 'js/stats.js';
+                            stats.onload = () => {
+                                console.log('stats.js loaded successfully');
+                                if (typeof initStats === 'function') {
+                                    initStats();
+                                } else {
+                                    console.warn('initStats function not found');
+                                }
+                            };
+                            document.body.appendChild(stats);
+                            break;
+
+                        default:
+                            console.log(`No specific script initialization required for ${component}`);
+                    }
+
+                } else {
+                    console.error(`Container not found for ${component}`);
+                }
+            } catch (error) {
+                console.error(`Error loading component ${component}:`, error);
+            }
+        }
+
+        // 컴포넌트 순차적으로 로드
+        async function loadAllComponents() {
+            await loadComponent('header');
+            await loadComponent('main_banner');
+            await loadComponent('destinations');
+            await loadComponent('stats');
+            await loadComponent('footer');
+        }
+
+        // 페이지 로드 시 실행
+        document.addEventListener('DOMContentLoaded', () => {
+            loadAllComponents();
+        });
+    </script>
+</body>
+</html>
