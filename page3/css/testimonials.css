@@ -1,0 +1,105 @@
+/* testimonials.css */
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials-grid {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    min-height: 400px; /* 고정 높이 - 필요에 따라 조정 가능 */
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* 카드 높이를 컨테이너에 맞춤 */
+}
+
+.testimonial-content {
+    position: relative;
+    padding-left: 40px;
+    flex-grow: 1; /* 내용이 늘어날 수 있도록 함 */
+}
+
+.quote-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #4834d4;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #2d3436;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: auto; /* 하단에 고정 */
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.author-info {
+    flex-grow: 1;
+}
+
+.author-name {
+    font-size: 1.1rem;
+    color: #2d3436;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.author-title {
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        width: 90%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        min-height: auto; /* 모바일에서는 고정 높이 해제 */
+    }
+
+    .testimonial-card {
+        height: auto;
+    }
+}

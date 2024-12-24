@@ -1,0 +1,16 @@
+/* 전체 페이지 스타일 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+    background-color: #f8f9fa;
+}
+
+/* 전체 컨텐츠를 감싸는 컨테이너 */
+.page-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* 내부 요소가 넘치지 않도록 */
+} 

@@ -1,0 +1,43 @@
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #636e72;
+    margin-bottom: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .features-grid,
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .testimonial-card {
+        padding: 30px;
+    }
+}

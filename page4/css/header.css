@@ -1,0 +1,83 @@
+.header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+.header .search-bar {
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+}
+
+.header .search-bar input {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.header .search-bar input:focus {
+    outline: none;
+    border-color: #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.header .user-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .user-menu a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header .user-menu a:hover {
+    color: #333;
+}
+
+.header .nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1rem;
+}
+
+.header .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.header .nav-link:hover {
+    color: #ff6b6b;
+}

@@ -1,0 +1,60 @@
+.header {
+    background-color: #000000;
+    padding: 1.2rem 0;
+    border-bottom: 2px solid #00ff88;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+    transition: all 0.3s ease;
+}
+
+.header .logo:hover {
+    text-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+}
+
+.header .nav-menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.header .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.header .nav-link:hover {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.header .neon-icon {
+    color: #00ff88;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-shadow: 0 0 10px #00ff88;
+    transition: all 0.3s ease;
+}
+
+.header .neon-icon:hover {
+    text-shadow: 0 0 20px #00ff88;
+}

@@ -1,0 +1,134 @@
+<!-- 예: pages/page1/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main_banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/bestSellers.css">
+    <link rel="stylesheet" href="css/newArrivals.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/specialOffers.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <div class="page-content">
+        <div id="main_banner-container"></div>
+        <div id="bestSellers-container"></div>
+        <div id="newArrivals-container"></div>
+        <div id="categories-container"></div>
+        <div id="specialOffers-container"></div>
+        <div id="footer-container"></div>
+    </div>
+
+    <script>
+        async function loadComponent(component) {
+            try {
+                console.log(`Loading component: ${component}`);
+                const response = await fetch(`components/${component}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${component}: ${response.statusText}`);
+                }
+                const html = await response.text();
+
+                const container = document.getElementById(`${component}-container`);
+                if (container) {
+                    container.innerHTML = html;
+
+                    // 각 컴포넌트별 스크립트 로드 및 초기화
+                    switch (component) {
+                        case 'main_banner':
+                            const bannerScript = document.createElement('script');
+                            bannerScript.src = 'js/main_banner.js';
+                            bannerScript.onload = () => {
+                                console.log('main_banner.js loaded successfully');
+                                new MainBanner();
+                            };
+                            document.body.appendChild(bannerScript);
+                            break;
+                        case 'bestSellers':
+                            const bestSellersScript = document.createElement('script');
+                            bestSellersScript.src = 'js/bestSellers.js';
+                            bestSellersScript.onload = () => {
+                                console.log('bestSellers.js loaded successfully');
+                                if (typeof initBestSellers === 'function') {
+                                    initBestSellers();
+                                } else {
+                                    console.warn('initBestSellers function not found');
+                                }
+                            };
+                            document.body.appendChild(bestSellersScript);
+                            break;
+                        case 'newArrivals':
+                            const newArrivalsScript = document.createElement('script');
+                            newArrivalsScript.src = 'js/newArrivals.js';
+                            newArrivalsScript.onload = () => {
+                                console.log('newArrivals.js loaded successfully');
+                                if (typeof initNewArrivals === 'function') {
+                                    initNewArrivals();
+                                } else {
+                                    console.warn('initNewArrivals function not found');
+                                }
+                            };
+                            document.body.appendChild(newArrivalsScript);
+                            break;
+                        case 'categories':
+                            const categoriesScript = document.createElement('script');
+                            categoriesScript.src = 'js/categories.js';
+                            categoriesScript.onload = () => {
+                                console.log('categories.js loaded successfully');
+                                if (typeof initCategories === 'function') {
+                                    initCategories();
+                                }
+                            };
+                            document.body.appendChild(categoriesScript);
+                            break;
+                        case 'specialOffers':
+                            const specialOffersScript = document.createElement('script');
+                            specialOffersScript.src = 'js/specialOffers.js';
+                            specialOffersScript.onload = () => {
+                                console.log('specialOffers.js loaded successfully');
+                                if (typeof initSpecialOffers === 'function') {
+                                    initSpecialOffers();
+                                }
+                            };
+                            document.body.appendChild(specialOffersScript);
+                            break;
+                        default:
+                            console.log(`No specific script initialization required for ${component}`);
+                    }
+
+                } else {
+                    console.error(`Container not found for ${component}`);
+                }
+            } catch (error) {
+                console.error(`Error loading component ${component}:`, error);
+            }
+        }
+
+        // 컴포넌트 순차적으로 로드
+        async function loadAllComponents() {
+            await loadComponent('header');
+            await loadComponent('main_banner');
+            await loadComponent('bestSellers');
+            await loadComponent('newArrivals');
+            await loadComponent('categories');
+            await loadComponent('specialOffers');
+            await loadComponent('footer');
+        }
+
+        // 페이지 로드 시 실행
+        document.addEventListener('DOMContentLoaded', () => {
+            loadAllComponents();
+        });
+    </script>
+</body>
+
+</html>

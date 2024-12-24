@@ -1,0 +1,68 @@
+/* 전체 섹션 스타일 */
+.location {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.location-container {
+  display: flex;
+  flex-wrap: wrap; /* 작은 화면에서는 세로 정렬 */
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* 지도 스타일 */
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 위치 정보 스타일 */
+.location-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4a90e2;
+}
+
+.location-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.location-info ul {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  list-style-type: disc;
+  color: #555;
+}
+
+.location-info ul li {
+  margin: 0.3rem 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .location-container {
+    flex-direction: column;
+  }
+  .map-container,
+  .location-info {
+    width: 100%; /* 가로 100%로 확장 */
+  }
+}
